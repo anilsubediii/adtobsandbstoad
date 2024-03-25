@@ -46,6 +46,8 @@
         }
       });
       $('#bsDate').nepaliDatePicker({
+        ndpYear: true,
+        ndpMonth: true,
         onChange: (bsDate) => {
           if (bsDate && bsDate.bs) {
             const adDate = new NepaliDate(bsDate.bs).getAD();
